@@ -1,12 +1,12 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-//import Model from './Waving';
+import Model from '../../components/Waving';
 import dynamic from 'next/dynamic'
-const Model = dynamic(
+/*const Model = dynamic(
     () => import('./Waving'),
     { ssr: false }
-)
+)*/
 
 
 export default function App() {
