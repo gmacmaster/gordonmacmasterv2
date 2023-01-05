@@ -11,8 +11,8 @@ export default function Model({ ...props }) {
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {
-    /* highlight-line */
-    actions["Armature|mixamo.com|Layer0"].play(); /* highlight-line */
+    actions["Armature|mixamo.com|Layer0"].setEffectiveTimeScale(.5);
+    actions["Armature|mixamo.com|Layer0"].play();
   });
   return (
     <group ref={group} {...props} dispose={null}>
