@@ -1,7 +1,13 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import Model from './Waving';
+//import Model from './Waving';
+import dynamic from 'next/dynamic'
+const Model = dynamic(
+    () => import('./Waving'),
+    { ssr: false }
+)
+
 
 export default function App() {
     return (
@@ -13,8 +19,8 @@ export default function App() {
                 height: '100vh',
             }}
         >
-            <ambientLight intensity={1.25} />
-            <ambientLight intensity={0.1} />
+            <ambientLight intensity={.75} />
+            <ambientLight intensity={0.2} />
             <directionalLight intensity={0.4} />
             <Suspense fallback={null}>
                 <Model position={[0.025, -0.9, 0]} />
