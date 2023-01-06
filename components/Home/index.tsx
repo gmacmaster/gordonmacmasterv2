@@ -34,7 +34,7 @@ export default function Home() {
             <div className={styles.greetingText}>Hello!</div>
             <div className={styles.nameText}>I&apos;m Gordon MacMaster</div>
             <div className={styles.greetingDescription}>
-              I like building cool things
+              I like to build cool things
             </div>
             <div className={styles.intro}>
               I&apos;m a full stack software engineer with a passion for driving
@@ -44,15 +44,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <Link
-          href={"/Gordon_MacMaster_Resume_2022.pdf"}
-          style={{ display: "flex" }}
-          target={"_blank"}
-        >
-          <div className={styles.thirteen}>Resume</div>
-        </Link>
       </div>
       {loading && <Loading />}
     </>

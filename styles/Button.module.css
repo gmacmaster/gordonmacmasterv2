@@ -1,0 +1,12 @@
+.button {
+    border: 1px solid var(--primary-green);
+    border-radius: 4px;
+    width: fit-content;
+    color: var(--primary-green);
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+}

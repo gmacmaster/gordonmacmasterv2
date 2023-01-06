@@ -45,8 +45,11 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <div style={{ fontSize: 12, marginTop: 10 }}>
-        Copyright {year} Gordon MacMaster
+      <div
+        className={styles.footerText}
+        style={{ fontSize: 12, marginTop: "1rem", lineHeight: "24px" }}
+      >
+        <div>Made with ❤️ on 🌎</div>©{year} Gordon MacMaster
       </div>
     </div>
   );

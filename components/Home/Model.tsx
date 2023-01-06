@@ -17,7 +17,7 @@ export default function Model({ loading }: IWavingProps) {
       setIsWaving(true);
       setTimeout(() => {
         setIsWaving(false);
-      }, 5100);
+      }, 5200);
     }
   };
 
@@ -25,7 +25,7 @@ export default function Model({ loading }: IWavingProps) {
     setIsWaving(true);
     setTimeout(() => {
       setIsWaving(false);
-    }, 7100); // To account for 2s loading time
+    }, 7200); // To account for 2s loading time
 
     function handleScroll() {
       if (window.scrollY === 0) {

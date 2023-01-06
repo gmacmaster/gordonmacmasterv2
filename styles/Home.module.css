@@ -1,9 +1,16 @@
 .green {
   color: var(--primary-green);
 }
+.grey {
+  color: var(--secondary-grey);
+}
+.grey:hover {
+  color: var(--primary-green);
+}
 
 .header {
   font-family: var(--font-mono);
+  margin-left: 10%;
 }
 
 .introContainer {

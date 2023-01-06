@@ -24,16 +24,20 @@ export default function Header() {
       </div>
       <Navbar.Collapse className={styles.header}>
         <Navbar.Link href="#about">
-          <span className={styles.green}>1. </span>About
+          <span className={styles.green}>01. </span>
+          <span className={styles.grey}>About</span>
         </Navbar.Link>
         <Navbar.Link href="#experience">
-          <span className={styles.green}>2. </span>Experience
+          <span className={styles.green}>02. </span>
+          <span className={styles.grey}>Experience</span>
         </Navbar.Link>
         <Navbar.Link href="#work">
-          <span className={styles.green}>3. </span>Work
+          <span className={styles.green}>03. </span>
+          <span className={styles.grey}>Work</span>
         </Navbar.Link>
         <Navbar.Link href="#contact">
-          <span className={styles.green}>4. </span>Contact
+          <span className={styles.green}>04. </span>
+          <span className={styles.grey}>Contact</span>
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>

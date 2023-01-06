@@ -24,7 +24,7 @@ export default function Model({ ...props }) {
       actions["Armature|mixamo.com|Layer0.002"].play();
       setTimeout(() => {
         actions["Armature|mixamo.com|Layer0.002"].paused = true;
-      }, 5100);
+      }, 5200);
     } else {
       actions["Armature|mixamo.com|Layer0.002"].paused = true;
     }

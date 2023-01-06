@@ -9,3 +9,7 @@
     text-align: center;
     display: grid;
 }
+
+.footerText {
+    font-family: var(--font-mono);
+}
