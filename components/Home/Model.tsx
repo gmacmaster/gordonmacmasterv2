@@ -9,7 +9,7 @@ interface IWavingProps {
   loading: boolean;
 }
 
-export const ANIMATION_LENGTH = 5500;
+export const ANIMATION_LENGTH = 6000;
 
 export default function Model({ loading }: IWavingProps) {
   const [isWaving, setIsWaving] = useState(false);
