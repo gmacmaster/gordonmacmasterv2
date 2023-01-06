@@ -10,6 +10,7 @@ export default function Home() {
   const isMobile = mobile();
 
   const [loading, setLoading] = useState(true);
+  const [waving, setWaving] = useState(true);
 
   useEffect(() => {
     const html = document.getElementById("html");
@@ -25,22 +26,26 @@ export default function Home() {
     }, 2000);
   }, []);
   return (
-    <div
-      className={styles.main}
-      style={{ overflow: loading ? "hidden" : "inherit" }}
-    >
-      <div className={styles.description}>
-        <p>
-          <Link
-            href={"/Gordon_MacMaster_Resume_2022.pdf"}
-            style={{ display: "flex" }}
-            target={"_blank"}
-          >
-            Resume
-          </Link>
-        </p>
+    <>
+      <div style={{ display: "flex" }}>
+        {!isMobile && <Model waving={waving} loading={loading} />}
+        <div className={styles.center}>
+          <div className={styles.introContainer}>
+            <div className={styles.greetingText}>Hello!</div>
+            <div className={styles.nameText}>I&apos;m Gordon MacMaster</div>
+            <div className={styles.greetingDescription}>
+              I like building cool things
+            </div>
+            <div className={styles.intro}>
+              I&apos;m a full stack software engineer with a passion for driving
+              positive environmental change. I love tinkering with new
+              technologies, exploring the outdoors, and learning from others. I&apos;m currently working on a secret project 🤫.
+              More on that coming soon... 🐑 🚀 🌚
+            </div>
+          </div>
+        </div>
       </div>
-      <div className={styles.center}>
+      <div>
         <Link
           href={"/Gordon_MacMaster_Resume_2022.pdf"}
           style={{ display: "flex" }}
@@ -49,8 +54,7 @@ export default function Home() {
           <div className={styles.thirteen}>Resume</div>
         </Link>
       </div>
-      {!isMobile && <Model />}
       {loading && <Loading />}
-    </div>
+    </>
   );
 }

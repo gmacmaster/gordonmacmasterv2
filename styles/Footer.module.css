@@ -1,0 +1,11 @@
+.linkContainer {
+    margin: 0 8px;
+}
+.footerLink :hover {
+    color: var(--primary-green);
+}
+.centered {
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+}

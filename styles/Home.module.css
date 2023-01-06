@@ -1,3 +1,43 @@
+.green {
+  color: var(--primary-green);
+}
+
+.header {
+  font-family: var(--font-mono);
+}
+
+.introContainer {
+  width: 50vw;
+  max-width: calc(100vw - 450px);
+}
+
+.greetingText {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--secondary-grey);
+  font-family: var(--font-mono);
+  line-height: 28px;
+}
+.greetingDescription {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--tertiary-grey);
+  line-height: 40px;
+}
+.nameText {
+  font-weight: 600;
+  font-size: 36px;
+  color: var(--primary-green);
+  letter-spacing: .2rem;
+  line-height: 48px;
+  font-family: var(--font-mono);
+}
+.intro {
+  margin-top: 2rem;
+  color: var(--secondary-grey);
+  max-width: 40vw;
+}
+
 .centered {
   margin: 0 auto;
   text-align: center;
@@ -17,7 +57,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem 3rem;
+  padding-bottom: 3rem;
   min-height: 100vh;
 }
 
@@ -91,7 +131,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
+  padding: 4rem 0 4rem 0vw;
 }
 
 .center::before {
@@ -127,9 +167,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 75px;
-  height: 75px;
-  padding: 25px 10px;
+  padding: 1rem 2rem;
   margin-left: 16px;
   transform: translateZ(0);
   border-radius: var(--border-radius);
@@ -147,8 +185,8 @@
 /* Conic Gradient Animation */
 .thirteen::before {
   animation: 6s rotate linear infinite;
-  width: 200%;
-  height: 200%;
+  width: 300%;
+  height: 300%;
   background: var(--tile-border);
 }
 
@@ -157,11 +195,7 @@
   inset: 0;
   padding: 1px;
   border-radius: var(--border-radius);
-  background: linear-gradient(
-    to bottom right,
-    rgba(var(--tile-start-rgb), 1),
-    rgba(var(--tile-end-rgb), 1)
-  );
+  background: #111a21;
   background-clip: content-box;
 }
 
@@ -189,6 +223,14 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+  .introContainer {
+    width: 100vw;
+    max-width: unset;
+    padding: 0 2rem;
+  }
+  .intro {
+    max-width: 100vw;
+  }
   .content {
     padding: 4rem;
   }
@@ -209,7 +251,7 @@
   }
 
   .center {
-    padding: 8rem 0 6rem;
+    padding: 0px 0px 5rem;
   }
 
   .center::before {
