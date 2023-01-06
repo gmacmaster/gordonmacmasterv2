@@ -3,6 +3,7 @@ import styles from "../../styles/Home.module.css";
 import Link from "next/link";
 import Model from "./Model";
 import Loading from "./Loading";
+import Button from "../Button";
 
 const mobile = require("is-mobile");
 
@@ -39,9 +40,18 @@ export default function Home() {
             <div className={styles.intro}>
               I&apos;m a full stack software engineer with a passion for driving
               positive environmental change. I love tinkering with new
-              technologies, exploring the outdoors, and learning from others. I&apos;m currently working on a secret project 🤫.
-              More on that coming soon... 🐑 🚀 🌚
+              technologies, exploring the outdoors, and learning from others.
+              I&apos;m currently working on a secret project 🤫. More on that
+              coming soon... 🐑 🚀 🌚
             </div>
+            <Button style={{ marginTop: 10 }}>
+              <Link
+                href={"/Gordon_MacMaster_Resume_2022.pdf"}
+                target={"_blank"}
+              >
+                Resume
+              </Link>
+            </Button>
           </div>
         </div>
       </div>

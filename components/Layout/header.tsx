@@ -1,4 +1,4 @@
-import { Navbar, Button } from "flowbite-react";
+import { Navbar } from "flowbite-react";
 import Link from "next/link";
 import styles from "../../styles/Home.module.css";
 import React from "react";
@@ -31,12 +31,12 @@ export default function Header() {
           <span className={styles.green}>02. </span>
           <span className={styles.grey}>Experience</span>
         </Navbar.Link>
-        <Navbar.Link href="#work">
+        {/*        <Navbar.Link href="#work">
           <span className={styles.green}>03. </span>
           <span className={styles.grey}>Work</span>
-        </Navbar.Link>
+        </Navbar.Link>*/}
         <Navbar.Link href="#contact">
-          <span className={styles.green}>04. </span>
+          <span className={styles.green}>03. </span>
           <span className={styles.grey}>Contact</span>
         </Navbar.Link>
       </Navbar.Collapse>

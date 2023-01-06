@@ -12,7 +12,7 @@ export default function Projects() {
       <Home />
       <About />
       <Experience />
-      <Work />
+      {/*<Work />*/}
       <Contact />
     </Layout>
   );
