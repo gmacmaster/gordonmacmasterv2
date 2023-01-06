@@ -9,6 +9,8 @@ interface IWavingProps {
   loading: boolean;
 }
 
+export const ANIMATION_LENGTH = 5500;
+
 export default function Model({ loading }: IWavingProps) {
   const [isWaving, setIsWaving] = useState(false);
 
@@ -17,7 +19,7 @@ export default function Model({ loading }: IWavingProps) {
       setIsWaving(true);
       setTimeout(() => {
         setIsWaving(false);
-      }, 5200);
+      }, ANIMATION_LENGTH);
     }
   };
 
@@ -25,7 +27,7 @@ export default function Model({ loading }: IWavingProps) {
     setIsWaving(true);
     setTimeout(() => {
       setIsWaving(false);
-    }, 7200); // To account for 2s loading time
+    }, ANIMATION_LENGTH + 2000); // To account for 2s loading time
 
     function handleScroll() {
       if (window.scrollY === 0) {
