@@ -1,5 +1,4 @@
 import styles from "../../styles/Sections.module.css";
-import homeStyles from "../../styles/Home.module.css";
 import React from "react";
 import { Tabs } from "flowbite-react";
 
@@ -23,8 +22,18 @@ export default function About() {
             style="underline"
             className={styles.noBorder}
           >
-            <Tabs.Item active={true} title="Current Project">
-              🤫 Nothing to see here.
+            <Tabs.Item active={true} title="Vendora">
+              <ul style={{ listStyle: "inside" }}>
+                <li>
+                  Founding engineer @ <a style={{textDecoration: 'underline'}} target={'_blank'} href={'https://www.vendora.io'} rel="noreferrer">Vendora</a>
+                </li>
+                <li>
+                  Building e-commerce tools for making it easier for grocers and retails to sell online
+                </li>
+                <li>
+                  Using AI to leverage 1P and 3P platforms to maximize sales
+                </li>
+              </ul>
             </Tabs.Item>
             <Tabs.Item title="Tesla">
               <ul style={{ listStyle: "inside" }}>
