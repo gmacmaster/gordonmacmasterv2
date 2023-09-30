@@ -26,14 +26,6 @@ export default function About() {
             className={homeStyles.intro}
             style={{ maxWidth: 500, marginTop: ".5rem" }}
           >
-            I&apos;m currently working on a project that will help offset the carbon
-            footprint of large online purchases. That&apos;s as much as I can say on
-            the subject for now, but more will come soon.
-          </div>
-          <div
-            className={homeStyles.intro}
-            style={{ maxWidth: 500, marginTop: ".5rem" }}
-          >
             In my spare time (what&apos;s that??) I enjoy skiing, camping, and
             basically anything else that will get me away from my computer and
             into the outdoors.
